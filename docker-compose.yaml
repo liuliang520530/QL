@@ -1,0 +1,8 @@
+version: '3'  # 版本为123，已docker engine为例，一般为3 docker1.10之前为1
+services: 
+  qinglong:        # docker-compase控制的name
+    container_name: qinglong  # 容器名字
+    image: whyour/qinglong:latest # 容器镜像
+    restart: always # 自启
+    ports:
+      - 80:5700
